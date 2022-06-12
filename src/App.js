@@ -1,8 +1,13 @@
 import Navbar from './Navbar/Navbar';
+import Wrapper from './Wrapper/Wrapper';
 
 function App() {
   return(
-    <Navbar />
+    <>
+      <Navbar />
+      <Wrapper />
+    </>
+
   );
 }
 

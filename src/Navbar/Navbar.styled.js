@@ -20,8 +20,7 @@ hr {
 }
 
 .navigation__link {
-
-    font-size:1.5em;
+    font-size:1em;
     position:relative;
     display:inline-flex;
     z-index: 1;
@@ -69,5 +68,9 @@ hr {
     hr {
         display:none;
     }
+}
+
+@media only screen and (max-width:600px) {
+
 }
 `
