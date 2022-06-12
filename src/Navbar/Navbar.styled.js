@@ -1,0 +1,73 @@
+import styled from 'styled-components';
+
+export const NavContainer = styled.nav`
+background-color:#50A6D8;
+height:100%;
+width:20%;
+position:fixed;
+z-index:1;
+top:0;
+left:0;
+overflow-x:hidden;
+
+hr {
+    width:60%;
+}
+
+
+.navigation{
+    list-style:none;
+}
+
+.navigation__link {
+
+    font-size:1.5em;
+    position:relative;
+    display:inline-flex;
+    z-index: 1;
+    color:rgb(255,255,255);
+    text-decoration:none;
+}
+
+.navigation__link:before {
+    content: '';
+    position:absolute;
+    display:flex;
+    bottom:0em;
+    left: -0.75em;
+    height:60%;
+    width:0%;
+    background:#403f4c;
+    z-index:-1;
+    transition: .4s;
+}
+
+.navigation__link:hover:before {
+    width: calc(100% + 1.5em);
+}
+
+@media only screen and (max-width: 900px) {
+    position: relative;
+    width:100%;
+    
+    .navigation{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        align-items:center;
+        width:100%;
+        gap:1em;
+        padding:1em;
+        margin:0;
+    }
+
+    .navigation__item {
+        display:flex;
+        justify-content:space-between;
+    }
+
+    hr {
+        display:none;
+    }
+}
+`
