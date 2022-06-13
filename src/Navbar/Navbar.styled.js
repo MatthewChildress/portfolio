@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const NavContainer = styled.nav`
 display:flex;
-background-color:#50A6D8;
+background:linear-gradient(to bottom, rgba(80,166,216, 0.9), rgba(109,161,191, 0.9));
 height:100%;
 width:20%;
 position:fixed;
@@ -15,6 +15,7 @@ letter-spacing:.5em;
 
 hr {
     width:100%;
+    border-top:1px solid rgb(216,198,80);
 }
 
 
@@ -45,7 +46,7 @@ hr {
     left: -0.75em;
     height:60%;
     width:0%;
-    background:#403f4c;
+    background:rgba(64,63,76,1);
     z-index:-1;
     transition: .4s;
 }
