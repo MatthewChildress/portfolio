@@ -8,10 +8,10 @@ import Contact from '../Contact/Contact';
 const Wrapper = () => {
     return(
         <WrapperContainer>
-            <Hero />
-            <Skills />
-            <Projects />
-            <Contact />
+            <Hero id='hero'/>
+            <Skills id='skills' />
+            <Projects id='projects' />
+            <Contact id='contact' />
 
 
         </WrapperContainer>

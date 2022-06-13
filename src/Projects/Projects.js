@@ -1,8 +1,8 @@
 import { ProjectsContainer } from './Projects.styled'
 
-const Projects = () => {
+const Projects = (props) => {
     return(
-        <ProjectsContainer>
+        <ProjectsContainer id={props.id}>
             <h1>hi</h1>
 
         </ProjectsContainer>

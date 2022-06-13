@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const NavContainer = styled.nav`
+display:flex;
 background-color:#50A6D8;
 height:100%;
 width:20%;
@@ -9,20 +10,28 @@ z-index:1;
 top:0;
 left:0;
 overflow-x:hidden;
+margin:0;
+letter-spacing:.5em;
 
 hr {
-    width:60%;
+    width:100%;
 }
 
 
 .navigation{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
     list-style:none;
+    width:75%;
 }
 
 .navigation__link {
     font-size:1em;
     position:relative;
     display:inline-flex;
+    padding-inline-start:0em;
     z-index: 1;
     color:rgb(255,255,255);
     text-decoration:none;
@@ -46,6 +55,8 @@ hr {
 }
 
 @media only screen and (max-width: 900px) {
+    letter-spacing:.1em;
+    font-size:0.8em;
     position: relative;
     width:100%;
     

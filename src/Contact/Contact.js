@@ -1,8 +1,8 @@
 import { ContactContainer } from './Contact.styled'
 
-const Contact = () => {
+const Contact = (props) => {
     return(
-        <ContactContainer>
+        <ContactContainer id={props.id}>
             <h1>hi</h1>
 
         </ContactContainer>
